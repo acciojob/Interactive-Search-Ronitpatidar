@@ -1,1 +1,41 @@
 /*  your css code here. If applicable */
+/* Base styles for search */
+.search {
+  display: flex;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+/* Hide input by default */
+.search .input {
+  width: 0;
+  border: none;
+  outline: none;
+  transition: width 0.3s ease;
+}
+
+/* Button styling */
+.search .btn {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Active search shows input */
+.search.active .input {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Optional: better transition visuals */
+.search.active {
+  border-color: #008cba;
+}
